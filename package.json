@@ -1,0 +1,28 @@
+{
+  "name": "sebi",
+  "version": "1.0.0",
+  "description": "Script to pull metadata from pdf",
+  "license": "ISC",
+  "author": "Mohamad Daher",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "extract": "tsx one_shot_extract.ts",
+    "extract:sample": "tsx one_shot_extract.ts sample2.pdf --out refs.json --csv refs.csv",
+    "hybrid": "tsx hybrid_extract.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "openai": "^5.12.2",
+    "pdfjs-dist": "^5.4.54",
+    "zod": "^3.25.76",
+    "zod-to-json-schema": "^3.24.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  }
+}
+
